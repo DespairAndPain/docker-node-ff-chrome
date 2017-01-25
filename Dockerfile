@@ -1,5 +1,5 @@
 FROM selenium/node-base:latest
-MAINTAINER QAutomatron
+MAINTAINER Pilshchikov
 
 USER root
 
@@ -11,13 +11,13 @@ ENV LANG ru_RU.UTF-8
 ENV LC_ALL ru_RU.UTF-8
 
 #Set TimeZone
-ENV TZ "Europe/Moscow"
+ENV TZ "Asia/Ekaterinburg"
 
 #==========
 # Selenium Update
 #==========
 RUN  mkdir -p /opt/selenium \
-  && wget --no-verbose https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar -O /opt/selenium/selenium-server-standalone.jar
+  && wget --no-verbose https://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar -O /opt/selenium/selenium-server-standalone.jar
 
 #============================================
 # Google Chrome
