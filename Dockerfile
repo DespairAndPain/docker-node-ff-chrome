@@ -64,7 +64,8 @@ RUN wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geck
 #========================
 # Selenium Configuration
 #========================
-ENV NODE_MAX_INSTANCES 1
+ENV NODE_CHROME_MAX_INSTANCES 1
+ENV NODE_FIREFOX_MAX_INSTANCES 1
 ENV NODE_MAX_SESSION 1
 ENV NODE_REGISTER_CYCLE 5000
 ENV NODE_PORT 5555

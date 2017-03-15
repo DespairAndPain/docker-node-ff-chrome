@@ -10,13 +10,13 @@ echo "
     {
       \"version\": \"$FIREFOX_VERSION\",
       \"browserName\": \"firefox\",
-      \"maxInstances\": $NODE_MAX_INSTANCES,
+      \"maxInstances\": $NODE_FIREFOX_MAX_INSTANCES,
       \"seleniumProtocol\": \"WebDriver\"
     },
     {
       \"version\": \"$CHROME_VERSION\",
       \"browserName\": \"chrome\",
-      \"maxInstances\": $NODE_MAX_INSTANCES,
+      \"maxInstances\": $NODE_CHROME_MAX_INSTANCES,
       \"seleniumProtocol\": \"WebDriver\"
     }
   ],
